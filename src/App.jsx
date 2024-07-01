@@ -29,7 +29,6 @@ function App() {
       <Routes>
         <Route path="/" exact element={
           <>
-            <Home />
             <div className={styles.App}>
               {Array.from({ length: 18 }).map((_, index) => (
                 <div
