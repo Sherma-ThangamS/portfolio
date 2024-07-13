@@ -15,30 +15,32 @@ import Loader from "./components/Loader/Loader";
 function App() {
   const [coords, setCoords] = useState({ x: 0, y: 0 });
   const circlesRef = React.useRef([]);
-  const [isLoading,setLoading]=useState(true);
-  setTimeout(()=>{
-    setLoading(false);
-  },3000)
+  const [isLoading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000)
+
+  }, []);
   useEffect(() => {
     const circles = circlesRef.current;
     useMousePosition(circles, setCoords)
-  }, []);
-
+  }, [isLoading])
   useEffect(() => {
+
     animateCircles(circlesRef, coords);
   }, [coords]);
 
   return (
-    
-    <Router>
-      {isLoading ? 
 
-      <Loader/>
-       :
-      <Routes>
-        <Route path="/" exact element={
-          <>
-            <div className={styles.App}>
+    <Router>
+      {isLoading ?
+
+        <Loader />
+        :
+        <Routes>
+          <Route path="/" exact element={
+            <>
               {Array.from({ length: 28 }).map((_, index) => (
                 <div
                   key={index}
@@ -46,18 +48,19 @@ function App() {
                   className={styles.circle}
                 ></div>
               ))}
-              <ParallaxProvider >
-                <Navbar />
-              </ParallaxProvider>
-              <Hero />
-              <About />
-              <Experience />
-              <Projects />
-              <Contact />
-            </div>
-          </>
-        } />
-      </Routes>
+              <div className={styles.App}>
+                <ParallaxProvider >
+                  <Navbar />
+                </ParallaxProvider>
+                <Hero />
+                <About />
+                <Experience />
+                <Projects />
+                <Contact />
+              </div>
+            </>
+          } />
+        </Routes>
       }
     </Router>
   );

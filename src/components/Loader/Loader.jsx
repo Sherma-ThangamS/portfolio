@@ -108,10 +108,13 @@ const Loader = () => {
         </li>)
     }
   return (
-    <div className='r1' id='stage'>
-        <ol className='dots'>
-            {rows}
-        </ol>
+    
+    <div className='Loader'>
+      <div className='r1' id='stage'>
+          <ol className='dots'>
+              {rows}
+          </ol>
+      </div>
     </div>
   )
 }

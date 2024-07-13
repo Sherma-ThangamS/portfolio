@@ -6,16 +6,13 @@ $DOT_GAP  : 4px;
   box-shadow: 0 0 $DOT_GAP #fff;
 }
 
-html {
+.Loader {
+  height: 100vh;
+  width: 100vw;
   cursor: pointer;
+  background: #04152d;
 }
 
-body {
-  background: #04152d;;
-}
-.hidden {
-  display: none;
-}
 .dots {
   list-style: none;
   $DOTS_SIZE : ($DOT_SIZE + $DOT_GAP) * 9 + $DOT_GAP;
