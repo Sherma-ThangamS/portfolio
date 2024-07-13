@@ -10,11 +10,15 @@ import React, { useState, useEffect } from 'react';
 import { animateCircles } from "./hooks/useCircleAnimation";
 import { useMousePosition } from "./hooks/useMousePosition";
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Loader from "./components/Loader/Loader";
 
 function App() {
   const [coords, setCoords] = useState({ x: 0, y: 0 });
   const circlesRef = React.useRef([]);
-
+  const [isLoading,setLoading]=useState(true);
+  setTimeout(()=>{
+    setLoading(false);
+  },3000)
   useEffect(() => {
     const circles = circlesRef.current;
     useMousePosition(circles, setCoords)
@@ -25,12 +29,17 @@ function App() {
   }, [coords]);
 
   return (
+    
     <Router>
+      {isLoading ? 
+
+      <Loader/>
+       :
       <Routes>
         <Route path="/" exact element={
           <>
             <div className={styles.App}>
-              {Array.from({ length: 18 }).map((_, index) => (
+              {Array.from({ length: 28 }).map((_, index) => (
                 <div
                   key={index}
                   ref={(el) => (circlesRef.current[index] = el)}
@@ -49,6 +58,7 @@ function App() {
           </>
         } />
       </Routes>
+      }
     </Router>
   );
 }

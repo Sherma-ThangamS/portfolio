@@ -1,0 +1,2744 @@
+$DOT_SIZE : 10px;
+$DOT_GAP  : 4px;
+
+%on {
+  background: #fff;
+  box-shadow: 0 0 $DOT_GAP #fff;
+}
+
+html {
+  cursor: pointer;
+}
+
+body {
+  background: #04152d;;
+}
+.hidden {
+  display: none;
+}
+.dots {
+  list-style: none;
+  $DOTS_SIZE : ($DOT_SIZE + $DOT_GAP) * 9 + $DOT_GAP;
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+  padding: $DOT_GAP / 2;
+  width: $DOTS_SIZE; height: $DOTS_SIZE;
+  overflow: hidden;
+  
+  .r0 & {
+    .dot {
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(4) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(13) {
+        @extend %on;
+      }
+
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+
+      &:nth-child(29) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(41) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(49) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(56) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(61) {
+        @extend %on;
+      }
+      
+      &:nth-child(62) {
+        @extend %on;
+      }
+      
+      &:nth-child(63) {
+        @extend %on;
+      }
+      
+      &:nth-child(65) {
+        @extend %on;
+      }
+      
+      &:nth-child(72) {
+        @extend %on;
+      }
+      
+      &:nth-child(73) {
+        @extend %on;
+      }
+      
+      &:nth-child(74) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r1 & {
+    .dot {
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(4) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(13) {
+        @extend %on;
+      }
+
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+
+      &:nth-child(29) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(32) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(52) {
+        @extend %on;
+      }
+      
+      &:nth-child(53) {
+        @extend %on;
+      }
+      
+      &:nth-child(56) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(65) {
+        @extend %on;
+      }
+      
+      &:nth-child(73) {
+        @extend %on;
+      }
+      
+      &:nth-child(74) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r2 & {
+    .dot {
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(4) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(13) {
+        @extend %on;
+      }
+
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(52) {
+        @extend %on;
+      }
+      
+      &:nth-child(57) {
+        @extend %on;
+      }
+      
+      &:nth-child(59) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(65) {
+        @extend %on;
+      }
+      
+      &:nth-child(73) {
+        @extend %on;
+      }
+      
+      &:nth-child(74) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r3 & {
+    .dot {
+      &:nth-child(2) {
+        @extend %on;
+      }
+      
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(11) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+
+      &:nth-child(21) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(29) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(39) {
+        @extend %on;
+      }
+      
+      &:nth-child(47) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(56) {
+        @extend %on;
+      }
+      
+      &:nth-child(57) {
+        @extend %on;
+      }
+      
+      &:nth-child(58) {
+        @extend %on;
+      }
+      
+      &:nth-child(65) {
+        @extend %on;
+      }
+      
+      &:nth-child(73) {
+        @extend %on;
+      }
+      
+      &:nth-child(74) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r4 & {
+    .dot {
+      &:nth-child(2) {
+        @extend %on;
+      }
+      
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(11) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+
+      &:nth-child(21) {
+        @extend %on;
+      }
+      
+      &:nth-child(28) {
+        @extend %on;
+      }
+      
+      &:nth-child(29) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(39) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(49) {
+        @extend %on;
+      }
+      
+      &:nth-child(56) {
+        @extend %on;
+      }
+      
+      &:nth-child(57) {
+        @extend %on;
+      }
+      
+      &:nth-child(66) {
+        @extend %on;
+      }
+      
+      &:nth-child(74) {
+        @extend %on;
+      }
+      
+      &:nth-child(75) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r5 & {
+    .dot {
+      &:nth-child(2) {
+        @extend %on;
+      }
+      
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(11) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+
+      &:nth-child(21) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(28) {
+        @extend %on;
+      }
+      
+      &:nth-child(29) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(39) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(47) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(49) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(58) {
+        @extend %on;
+      }
+      
+      &:nth-child(68) {
+        @extend %on;
+      }
+      
+      &:nth-child(76) {
+        @extend %on;
+      }
+      
+      &:nth-child(77) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r6 & {
+    .dot {
+      &:nth-child(2) {
+        @extend %on;
+      }
+      
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(11) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+
+      &:nth-child(19) {
+        @extend %on;
+      }
+      
+      &:nth-child(21) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(29) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(32) {
+        @extend %on;
+      }
+      
+      &:nth-child(38) {
+        @extend %on;
+      }
+      
+      &:nth-child(39) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(47) {
+        @extend %on;
+      }
+      
+      &:nth-child(49) {
+        @extend %on;
+      }
+      
+      &:nth-child(57) {
+        @extend %on;
+      }
+      
+      &:nth-child(59) {
+        @extend %on;
+      }
+      
+      &:nth-child(69) {
+        @extend %on;
+      }
+      
+      &:nth-child(79) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r7 & {
+    .dot {
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(4) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(13) {
+        @extend %on;
+      }
+
+      &:nth-child(20) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(56) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(66) {
+        @extend %on;
+      }
+      
+      &:nth-child(70) {
+        @extend %on;
+      }
+      
+      &:nth-child(80) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r8 & {
+    .dot {
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(4) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(13) {
+        @extend %on;
+      }
+
+      &:nth-child(20) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(41) {
+        @extend %on;
+      }
+      
+      &:nth-child(47) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(49) {
+        @extend %on;
+      }
+      
+      &:nth-child(56) {
+        @extend %on;
+      }
+      
+      &:nth-child(59) {
+        @extend %on;
+      }
+      
+      &:nth-child(65) {
+        @extend %on;
+      }
+      
+      &:nth-child(69) {
+        @extend %on;
+      }
+      
+      &:nth-child(70) {
+        @extend %on;
+      }
+      
+      &:nth-child(71) {
+        @extend %on;
+      }
+      
+      &:nth-child(73) {
+        @extend %on;
+      }
+      
+      &:nth-child(74) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r9 & {
+    .dot {
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(4) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(13) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(29) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(41) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(49) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(56) {
+        @extend %on;
+      }
+      
+      &:nth-child(59) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(61) {
+        @extend %on;
+      }
+      
+      &:nth-child(62) {
+        @extend %on;
+      }
+      
+      &:nth-child(65) {
+        @extend %on;
+      }
+      
+      &:nth-child(71) {
+        @extend %on;
+      }
+      
+      &:nth-child(73) {
+        @extend %on;
+      }
+      
+      &:nth-child(74) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r10 & {
+    .dot {
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(4) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(13) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(29) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(32) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(52) {
+        @extend %on;
+      }
+      
+      &:nth-child(53) {
+        @extend %on;
+      }
+      
+      &:nth-child(56) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(65) {
+        @extend %on;
+      }
+      
+      &:nth-child(73) {
+        @extend %on;
+      }
+      
+      &:nth-child(74) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r11 & {
+    .dot {
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(4) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(13) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(52) {
+        @extend %on;
+      }
+      
+      &:nth-child(57) {
+        @extend %on;
+      }
+      
+      &:nth-child(59) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(65) {
+        @extend %on;
+      }
+      
+      &:nth-child(73) {
+        @extend %on;
+      }
+      
+      &:nth-child(74) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r12 & {
+    .dot {
+      &:nth-child(2) {
+        @extend %on;
+      }
+      
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(11) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(21) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(29) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(39) {
+        @extend %on;
+      }
+      
+      &:nth-child(47) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(56) {
+        @extend %on;
+      }
+      
+      &:nth-child(57) {
+        @extend %on;
+      }
+      
+      &:nth-child(58) {
+        @extend %on;
+      }
+      
+      &:nth-child(65) {
+        @extend %on;
+      }
+      
+      &:nth-child(73) {
+        @extend %on;
+      }
+      
+      &:nth-child(74) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r13 & {
+    .dot {
+      &:nth-child(2) {
+        @extend %on;
+      }
+      
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(11) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(21) {
+        @extend %on;
+      }
+      
+      &:nth-child(28) {
+        @extend %on;
+      }
+      
+      &:nth-child(29) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(39) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(49) {
+        @extend %on;
+      }
+      
+      &:nth-child(56) {
+        @extend %on;
+      }
+      
+      &:nth-child(57) {
+        @extend %on;
+      }
+      
+      &:nth-child(66) {
+        @extend %on;
+      }
+      
+      &:nth-child(74) {
+        @extend %on;
+      }
+      
+      &:nth-child(75) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r14 & {
+    .dot {
+      &:nth-child(2) {
+        @extend %on;
+      }
+      
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(11) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(21) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(28) {
+        @extend %on;
+      }
+      
+      &:nth-child(29) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(39) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(47) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(49) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(58) {
+        @extend %on;
+      }
+      
+      &:nth-child(68) {
+        @extend %on;
+      }
+      
+      &:nth-child(76) {
+        @extend %on;
+      }
+      
+      &:nth-child(77) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r15 & {
+    .dot {
+      &:nth-child(2) {
+        @extend %on;
+      }
+      
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(11) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(19) {
+        @extend %on;
+      }
+      
+      &:nth-child(21) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(29) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(32) {
+        @extend %on;
+      }
+      
+      &:nth-child(38) {
+        @extend %on;
+      }
+      
+      &:nth-child(39) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(47) {
+        @extend %on;
+      }
+      
+      &:nth-child(49) {
+        @extend %on;
+      }
+      
+      &:nth-child(57) {
+        @extend %on;
+      }
+      
+      &:nth-child(59) {
+        @extend %on;
+      }
+      
+      &:nth-child(69) {
+        @extend %on;
+      }
+      
+      &:nth-child(79) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r16 & {
+    .dot {
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(4) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(13) {
+        @extend %on;
+      }
+      
+      &:nth-child(20) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(42) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(56) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(66) {
+        @extend %on;
+      }
+      
+      &:nth-child(70) {
+        @extend %on;
+      }
+      
+      &:nth-child(80) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .r17 & {
+    .dot {
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(4) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(13) {
+        @extend %on;
+      }
+      
+      &:nth-child(20) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(41) {
+        @extend %on;
+      }
+      
+      &:nth-child(47) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(49) {
+        @extend %on;
+      }
+      
+      &:nth-child(56) {
+        @extend %on;
+      }
+      
+      &:nth-child(59) {
+        @extend %on;
+      }
+      
+      &:nth-child(65) {
+        @extend %on;
+      }
+      
+      &:nth-child(69) {
+        @extend %on;
+      }
+      
+      &:nth-child(70) {
+        @extend %on;
+      }
+      
+      &:nth-child(71) {
+        @extend %on;
+      }
+      
+      &:nth-child(73) {
+        @extend %on;
+      }
+      
+      &:nth-child(74) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .j0 & {
+    .dot {
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(13) {
+        @extend %on;
+      }
+      
+      &:nth-child(21) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(32) {
+        @extend %on;
+      }
+      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(39) {
+        @extend %on;
+      }
+      
+      &:nth-child(41) {
+        @extend %on;
+      }
+      
+      &:nth-child(42) {
+        @extend %on;
+      }
+      
+      &:nth-child(47) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(58) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(68) {
+        @extend %on;
+      }
+      
+      &:nth-child(70) {
+        @extend %on;
+      }
+      
+      &:nth-child(76) {
+        @extend %on;
+      }
+      
+      &:nth-child(77) {
+        @extend %on;
+      }
+      
+      &:nth-child(80) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .j1 & {
+    .dot {
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(32) {
+        @extend %on;
+      }
+      
+      &:nth-child(42) {
+        @extend %on;
+      }
+      
+      &:nth-child(43) {
+        @extend %on;
+      }
+      
+      &:nth-child(51) {
+        @extend %on;
+      }
+      
+      &:nth-child(53) {
+        @extend %on;
+      }
+      
+      &:nth-child(59) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(61) {
+        @extend %on;
+      }
+      
+      &:nth-child(62) {
+        @extend %on;
+      }
+      
+      &:nth-child(69) {
+        @extend %on;
+      }
+      
+      &:nth-child(79) {
+        @extend %on;
+      }
+    }
+  }
+
+  .j2 & {
+    .dot {
+      &:nth-child(13) {
+        @extend %on;
+      }
+      
+      &:nth-child(14) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(34) {
+        @extend %on;
+      }
+      
+      &:nth-child(42) {
+        @extend %on;
+      }
+      
+      &:nth-child(44) {
+        @extend %on;
+      }
+      
+      &:nth-child(51) {
+        @extend %on;
+      }
+      
+      &:nth-child(59) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(61) {
+        @extend %on;
+      }
+      
+      &:nth-child(62) {
+        @extend %on;
+      }
+      
+      &:nth-child(63) {
+        @extend %on;
+      }
+      
+      &:nth-child(69) {
+        @extend %on;
+      }
+      
+      &:nth-child(72) {
+        @extend %on;
+      }
+      
+      &:nth-child(77) {
+        @extend %on;
+      }
+      
+      &:nth-child(78) {
+        @extend %on;
+      }
+    }
+  }
+
+  .j3 & {
+    .dot {
+      &:nth-child(4) {
+        @extend %on;
+      }
+      
+      &:nth-child(5) {
+        @extend %on;
+      }
+      
+      &:nth-child(13) {
+        @extend %on;
+      }
+      
+      &:nth-child(14) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(24) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(42) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(59) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(69) {
+        @extend %on;
+      }
+      
+      &:nth-child(70) {
+        @extend %on;
+      }
+      
+      &:nth-child(77) {
+        @extend %on;
+      }
+      
+      &:nth-child(78) {
+        @extend %on;
+      }
+    }
+  }
+
+  .j4 & {
+    padding-bottom: $DOT_SIZE + $DOT_GAP;
+    
+    .dot {
+      &:nth-child(4) {
+        @extend %on;
+      }
+      
+      &:nth-child(5) {
+        @extend %on;
+      }
+      
+      &:nth-child(13) {
+        @extend %on;
+      }
+      
+      &:nth-child(14) {
+        @extend %on;
+      }
+      
+      &:nth-child(21) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(32) {
+        @extend %on;
+      }
+      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(41) {
+        @extend %on;
+      }
+      
+      &:nth-child(43) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(58) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(68) {
+        @extend %on;
+      }
+      
+      &:nth-child(70) {
+        @extend %on;
+      }
+      
+      &:nth-child(78) {
+        @extend %on;
+      }
+      
+      &:nth-child(80) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .j5 &, .j10 & {
+    padding-bottom: ($DOT_SIZE + $DOT_GAP) * 8;
+    
+    .dot {
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(5) {
+        @extend %on;
+      }
+      
+      &:nth-child(6) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(14) {
+        @extend %on;
+      }
+      
+      &:nth-child(15) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(32) {
+        @extend %on;
+      }
+      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(39) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(41) {
+        @extend %on;
+      }
+      
+      &:nth-child(43) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(56) {
+        @extend %on;
+      }
+      
+      &:nth-child(57) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(70) {
+        @extend %on;
+      }
+      
+      &:nth-child(80) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .j6 &, .j9 & {
+    padding-bottom: ($DOT_SIZE + $DOT_GAP) * 15;
+    
+    .dot {
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(5) {
+        @extend %on;
+      }
+      
+      &:nth-child(6) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(14) {
+        @extend %on;
+      }
+      
+      &:nth-child(15) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(32) {
+        @extend %on;
+      }
+      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(39) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(41) {
+        @extend %on;
+      }
+      
+      &:nth-child(43) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(56) {
+        @extend %on;
+      }
+      
+      &:nth-child(57) {
+        @extend %on;
+      }
+      
+      &:nth-child(59) {
+        @extend %on;
+      }
+      
+      &:nth-child(68) {
+        @extend %on;
+      }
+      
+      &:nth-child(78) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .j7 &, .j8 & {
+    padding-bottom: ($DOT_SIZE + $DOT_GAP) * 16;
+    
+    .dot {
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(5) {
+        @extend %on;
+      }
+      
+      &:nth-child(6) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(14) {
+        @extend %on;
+      }
+      
+      &:nth-child(15) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(32) {
+        @extend %on;
+      }
+      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(39) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(41) {
+        @extend %on;
+      }
+      
+      &:nth-child(43) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(56) {
+        @extend %on;
+      }
+      
+      &:nth-child(57) {
+        @extend %on;
+      }
+      
+      &:nth-child(59) {
+        @extend %on;
+      }
+      
+      &:nth-child(68) {
+        @extend %on;
+      }
+      
+      &:nth-child(78) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .j11 & {
+    padding-bottom: ($DOT_SIZE + $DOT_GAP) * 2;
+    
+    .dot {
+      &:nth-child(4) {
+        @extend %on;
+      }
+      
+      &:nth-child(6) {
+        @extend %on;
+      }
+      
+      &:nth-child(7) {
+        @extend %on;
+      }
+      
+      &:nth-child(14) {
+        @extend %on;
+      }
+      
+      &:nth-child(15) {
+        @extend %on;
+      }
+      
+      &:nth-child(16) {
+        @extend %on;
+      }
+      
+      &:nth-child(25) {
+        @extend %on;
+      }
+      
+      &:nth-child(34) {
+        @extend %on;
+      }
+      
+      &:nth-child(35) {
+        @extend %on;
+      }
+      
+      &:nth-child(43) {
+        @extend %on;
+      }
+      
+      &:nth-child(44) {
+        @extend %on;
+      }
+      
+      &:nth-child(50) {
+        @extend %on;
+      }
+      
+      &:nth-child(51) {
+        @extend %on;
+      }
+      
+      &:nth-child(52) {
+        @extend %on;
+      }
+      
+      &:nth-child(58) {
+        @extend %on;
+      }
+      
+      &:nth-child(61) {
+        @extend %on;
+      }
+      
+      &:nth-child(66) {
+        @extend %on;
+      }
+      
+      &:nth-child(67) {
+        @extend %on;
+      }
+      
+      &:nth-child(70) {
+        @extend %on;
+      }
+      
+      &:nth-child(78) {
+        @extend %on;
+      }
+      
+      &:nth-child(79) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .j12 & {   
+    .dot {
+      &:nth-child(15) {
+        @extend %on;
+      }
+      
+      &:nth-child(16) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(24) {
+        @extend %on;
+      }
+      
+      &:nth-child(25) {
+        @extend %on;
+      }
+      
+      &:nth-child(34) {
+        @extend %on;
+      }
+      
+      &:nth-child(35) {
+        @extend %on;
+      }
+      
+      &:nth-child(44) {
+        @extend %on;
+      }
+      
+      &:nth-child(51) {
+        @extend %on;
+      }
+      
+      &:nth-child(52) {
+        @extend %on;
+      }
+      
+      &:nth-child(61) {
+        @extend %on;
+      }
+      
+      &:nth-child(62) {
+        @extend %on;
+      }
+      
+      &:nth-child(71) {
+        @extend %on;
+      }
+      
+      &:nth-child(72) {
+        @extend %on;
+      }
+      
+      &:nth-child(79) {
+        @extend %on;
+      }
+      
+      &:nth-child(80) {
+        @extend %on;
+      }
+    }
+  }
+  
+.j13 & {   
+    .dot {      
+      &:nth-child(24) {
+        @extend %on;
+      }
+      
+      &:nth-child(25) {
+        @extend %on;
+      }
+      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(34) {
+        @extend %on;
+      }
+      
+      &:nth-child(35) {
+        @extend %on;
+      }
+
+      &:nth-child(41) {
+        @extend %on;
+      }
+      
+      &:nth-child(42) {
+        @extend %on;
+      }
+      
+      &:nth-child(43) {
+        @extend %on;
+      }
+      
+      &:nth-child(45) {
+        @extend %on;
+      }
+      
+      &:nth-child(52) {
+        @extend %on;
+      }
+      
+      &:nth-child(53) {
+        @extend %on;
+      }
+      
+      &:nth-child(54) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(61) {
+        @extend %on;
+      }
+      
+      &:nth-child(70) {
+        @extend %on;
+      }
+      
+      &:nth-child(71) {
+        @extend %on;
+      }
+      
+      &:nth-child(78) {
+        @extend %on;
+      }
+      
+      &:nth-child(79) {
+        @extend %on;
+      }
+      
+      &:nth-child(80) {
+        @extend %on;
+      }
+      
+      &:nth-child(81) {
+        @extend %on;
+      }
+    }
+  }
+  
+.j14 & {   
+    .dot {      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(34) {
+        @extend %on;
+      }
+      
+      &:nth-child(42) {
+        @extend %on;
+      }
+      
+      &:nth-child(43) {
+        @extend %on;
+      }
+      
+      &:nth-child(52) {
+        @extend %on;
+      }
+      
+      &:nth-child(53) {
+        @extend %on;
+      }
+      
+      &:nth-child(54) {
+        @extend %on;
+      }
+      
+      &:nth-child(59) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(63) {
+        @extend %on;
+      }
+      
+      &:nth-child(70) {
+        @extend %on;
+      }
+      
+      &:nth-child(71) {
+        @extend %on;
+      }
+      
+      &:nth-child(72) {
+        @extend %on;
+      }
+      
+      &:nth-child(79) {
+        @extend %on;
+      }
+      
+      &:nth-child(80) {
+        @extend %on;
+      }
+      
+      &:nth-child(81) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .j15 & {
+    .dot {
+      &:nth-child(6) {
+        @extend %on;
+      }
+      
+      &:nth-child(7) {
+        @extend %on;
+      }
+      
+      &:nth-child(15) {
+        @extend %on;
+      }
+      
+      &:nth-child(16) {
+        @extend %on;
+      }
+      
+      &:nth-child(25) {
+        @extend %on;
+      }
+      
+      &:nth-child(26) {
+        @extend %on;
+      }
+      
+      &:nth-child(32) {
+        @extend %on;
+      }
+      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(34) {
+        @extend %on;
+      }
+      
+      &:nth-child(35) {
+        @extend %on;
+      }
+      
+      &:nth-child(43) {
+        @extend %on;
+      }
+      
+      &:nth-child(44) {
+        @extend %on;
+      }
+      
+      &:nth-child(51) {
+        @extend %on;
+      }
+      
+      &:nth-child(52) {
+        @extend %on;
+      }
+      
+      &:nth-child(53) {
+        @extend %on;
+      }
+      
+      &:nth-child(54) {
+        @extend %on;
+      }
+      
+      &:nth-child(62) {
+        @extend %on;
+      }
+      
+      &:nth-child(72) {
+        @extend %on;
+      }
+      
+      &:nth-child(80) {
+        @extend %on;
+      }
+      
+      &:nth-child(81) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .j16 & {
+    .dot {
+      &:nth-child(4) {
+        @extend %on;
+      }
+      
+      &:nth-child(5) {
+        @extend %on;
+      }
+      
+      &:nth-child(13) {
+        @extend %on;
+      }
+      
+      &:nth-child(14) {
+        @extend %on;
+      }
+      
+      &:nth-child(21) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(24) {
+        @extend %on;
+      }
+      
+      &:nth-child(25) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(32) {
+        @extend %on;
+      }
+      
+      &:nth-child(34) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(41) {
+        @extend %on;
+      }
+      
+      &:nth-child(42) {
+        @extend %on;
+      }
+      
+      &:nth-child(49) {
+        @extend %on;
+      }
+      
+      &:nth-child(51) {
+        @extend %on;
+      }
+      
+      &:nth-child(59) {
+        @extend %on;
+      }
+      
+      &:nth-child(61) {
+        @extend %on;
+      }
+      
+      &:nth-child(71) {
+        @extend %on;
+      }
+      
+      &:nth-child(81) {
+        @extend %on;
+      }
+    }
+  }
+  
+  .j17 & {
+    .dot {
+      &:nth-child(3) {
+        @extend %on;
+      }
+      
+      &:nth-child(4) {
+        @extend %on;
+      }
+      
+      &:nth-child(12) {
+        @extend %on;
+      }
+      
+      &:nth-child(13) {
+        @extend %on;
+      }
+      
+      &:nth-child(22) {
+        @extend %on;
+      }
+      
+      &:nth-child(23) {
+        @extend %on;
+      }
+      
+      &:nth-child(29) {
+        @extend %on;
+      }
+      
+      &:nth-child(30) {
+        @extend %on;
+      }
+      
+      &:nth-child(31) {
+        @extend %on;
+      }
+      
+      &:nth-child(33) {
+        @extend %on;
+      }
+      
+      &:nth-child(40) {
+        @extend %on;
+      }
+      
+      &:nth-child(41) {
+        @extend %on;
+      }
+      
+      &:nth-child(47) {
+        @extend %on;
+      }
+      
+      &:nth-child(48) {
+        @extend %on;
+      }
+      
+      &:nth-child(49) {
+        @extend %on;
+      }
+      
+      &:nth-child(56) {
+        @extend %on;
+      }
+      
+      &:nth-child(59) {
+        @extend %on;
+      }
+      
+      &:nth-child(60) {
+        @extend %on;
+      }
+      
+      &:nth-child(61) {
+        @extend %on;
+      }
+      
+      &:nth-child(62) {
+        @extend %on;
+      }
+      
+      &:nth-child(65) {
+        @extend %on;
+      }
+      
+      &:nth-child(71) {
+        @extend %on;
+      }
+      
+      &:nth-child(73) {
+        @extend %on;
+      }
+      
+      &:nth-child(74) {
+        @extend %on;
+      }
+    }
+  }
+}
+
+.dot {
+  float: left;
+  margin: $DOT_GAP / 2;
+  border-radius: 2px;
+  width: $DOT_SIZE; height: $DOT_SIZE;
+  font-size: 10px;
+  text-indent: -9999px;
+}
