@@ -2,13 +2,17 @@
 
 .container {
   color: var(--color-text);
-  margin-top: 120px;
+  margin-top: 8%;
   background-color: var(--color-secondary);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100vw;
-  padding: 58px 10%;
+  width: 70vw;
+  margin-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  padding: 10% 10%;
   gap: 10px;
 }
 

@@ -1,13 +1,25 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import styles from "./Experience.module.css";
 import skills from "../../data/skills.json";
 import history from "../../data/history.json";
 import { getImageUrl } from "../../utils";
+import Back from "../Icons/Back";
+import { useNavigate } from "react-router-dom";
 
 export const Experience = () => {
+  const navigate=useNavigate();
   return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }} // Add transition settings
+    >
     <section className={styles.container} id="experience">
+      <div onClick={()=>navigate('/')} style={{position:'absolute',left:'-150px',top:'-30px',cursor:'pointer'}}>
+      <Back/>
+      </div>
       <h2 className={styles.title}>Experience</h2>
       <div className={styles.content}>
         <div className={styles.skills}>
@@ -45,5 +57,6 @@ export const Experience = () => {
         </ul>
       </div>
     </section>
+    </motion.div>
   );
 };

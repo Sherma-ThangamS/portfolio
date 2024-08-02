@@ -5,9 +5,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 61px;
+  padding:1vw;
   z-index: 2;
   margin: 0 10%;
+  margin-top: 20px;
 }
 
 .title {
@@ -19,6 +20,7 @@
 
 .menu {
   display: flex;
+  cursor: pointer;
 }
 
 .menuItems {
@@ -27,7 +29,9 @@
   list-style: none;
 }
 
-.menuItems a {
+.menuItems button {
+  background: none;
+  cursor: pointer;
   font-size: 25px;
   color: var(--color-text);
   text-decoration: none;
@@ -50,7 +54,7 @@
   }
 
   .menuBtn {
-    display: block;
+    display: block; 
     cursor: pointer;
   }
 

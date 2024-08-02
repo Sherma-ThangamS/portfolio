@@ -8,12 +8,28 @@
     "imageSrc": "skills/css.png"
   },
   {
+    "title": "JavaScript",
+    "imageSrc": "skills/JavaScript.webp"
+  },
+  {
+    "title": "Nextjs",
+    "imageSrc": "skills/Nextjs.png"
+  },
+  {
     "title": "React",
     "imageSrc": "skills/react.png"
   },
   {
-    "title": "sql",
+    "title": "MySql",
     "imageSrc": "skills/sq.png"
+  },
+  {
+    "title": "express",
+    "imageSrc": "skills/express.png"
+  },
+  {
+    "title": "Nodejs",
+    "imageSrc": "skills/nodejs.png"
   },
   {
     "title": "Tensorflow",
