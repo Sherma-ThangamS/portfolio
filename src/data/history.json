@@ -1,19 +1,19 @@
 [
   {
-    "role": "ML Engineer Intern",
-    "organisation": "SkillVertex",
-    "startDate": "Sept, 2023",
-    "endDate": "Present",
-    "experiences": ["Worked on Classification model", "Project on detecting credit card fraud"],
-    "imageSrc": "history/skillvertex.png"
+    "role": "Amazon ML Summer School",
+    "organisation": "Amazon",
+    "startDate": "June, 2024",
+    "endDate": "Augest, 2024",
+    "experiences": ["Learnt about Machine Learning models", "Learnt about Generative Models"],
+    "imageSrc": "history/AmazonLogo.png"
   },
   {
-    "role": "Data Scientist Intern",
-    "organisation": "CodersCave",
-    "startDate": "Aug, 2023",
-    "endDate": "Sept, 2022",
-    "experiences": ["Worked on Regression", "Project on Stock Market Price Predition"],
-    "imageSrc": "history/CodersCave.png"
+    "role": "Full Stack Intern",
+    "organisation": "SmartItFrame",
+    "startDate": "May, 2024",
+    "endDate": "Augest, 2024",
+    "experiences": ["Revamped the User Interface", "Formulated the Frontend and Backend Interactions"],
+    "imageSrc": "history/SmartItFrame.png"
   },
   {
     "role": "Artificial Intellegence Intern",

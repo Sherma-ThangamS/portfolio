@@ -1,18 +1,17 @@
-import React, { useState } from "react";
-
+import React, { useRef, useState } from "react";
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
-import { Link } from "react-router-dom";
-
-export const Navbar = () => {
+import { Link, useNavigate } from "react-router-dom";
+export const Navbar = ({ toggle, setToggle }) => {
+  
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const navigate = useNavigate();
   return (
     <nav className={styles.navbar}>
       <Link className={styles.title} href="/">
-        Portfolio
+        SST
       </Link>
-      <div className={styles.menu}>
+      <div className={styles.menu} onClick={() => { setToggle(!toggle) }}>
         <img
           className={styles.menuBtn}
           src={
@@ -21,25 +20,8 @@ export const Navbar = () => {
               : getImageUrl("nav/menuIcon.png")
           }
           alt="menu-button"
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => { setMenuOpen(!menuOpen); setToggle(!toggle) }}
         />
-        <ul
-          className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
-          onClick={() => setMenuOpen(false)}
-        >
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#experience">Experience</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
       </div>
     </nav>
   );
