@@ -10,12 +10,18 @@ import { animateCircles } from "./hooks/useCircleAnimation";
 import { useMousePosition } from "./hooks/useMousePosition";
 import Loader from "./components/Loader/Loader";
 import { AnimatePresence } from "framer-motion";
+import { defineElement } from "@lordicon/element";
+import Lottie from "lottie-web";
 
 function App() {
   const [coords, setCoords] = useState({ x: 0, y: 0 });
   const circlesRef = React.useRef([]);
   const [isLoading, setLoading] = useState(true);
 
+  useEffect(() => {
+    defineElement(Lottie.loadAnimation);
+  }, []); 
+  
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);

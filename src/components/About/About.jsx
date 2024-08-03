@@ -9,12 +9,6 @@ import { useNavigate } from "react-router-dom";
 
 export const About = () => {
   const navigate = useNavigate();
-
-  // Initialize Lottie
-  useEffect(() => {
-    defineElement(lottie.loadAnimation);
-  }, []); // Empty dependency array ensures this runs once
-
   return (
     <motion.div
       // initial={{ opacity: 0 }}
