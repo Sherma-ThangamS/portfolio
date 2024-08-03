@@ -1,7 +1,7 @@
 @import "../../vars.css";
 
 .container {
-  margin-top: 86px;
+  margin-top: 16vh;
   color: var(--color-text);
   margin-left: 10%;
   margin-right: 10%;
@@ -27,6 +27,3 @@
   transition: 1s;
 }
 
-.projects :hover{
-  background: linear-gradient(180deg, #29409d 0%, #0842a5 100%);
-}
