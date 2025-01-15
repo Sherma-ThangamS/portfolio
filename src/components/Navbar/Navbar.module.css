@@ -5,14 +5,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:1vw;
+  padding: 1vw;
   z-index: 2;
-  margin: 0 10%;
-  margin-top: 20px;
+  margin: 0 10vw;
+  margin-top: 1.9vh;
 }
 
 .title {
-  font-size: 30px;
+  font-size: 1.6vw;
   font-weight: 600;
   text-decoration: none;
   color: var(--color-text);
@@ -25,14 +25,14 @@
 
 .menuItems {
   display: flex;
-  gap: 47px;
+  gap: 2.4vw;
   list-style: none;
 }
 
 .menuItems button {
   background: none;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 1.3vw;
   color: var(--color-text);
   text-decoration: none;
 }
@@ -46,10 +46,10 @@
   .menu {
     position: absolute;
     right: 0;
-    margin-right: 10%;
+    margin-right: 10vw;
     flex-direction: column;
     align-items: flex-end;
-    gap: 11px;
+    gap: 1.3vw;
     z-index: 3;
   }
 
@@ -62,16 +62,16 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    gap: 13px;
-    border-radius: 10px;
+    gap: 1.6vw;
+    border-radius: 0.52vw;
     background: rgb(25, 55, 109);
     background: linear-gradient(
       0deg,
       rgba(25, 55, 109, 0.2) 0%,
       rgba(25, 55, 109, 1) 100%
     );
-    padding: 24px 33px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    padding: 2.5vh 3.4vw;
+    box-shadow: 0 0 0.2vw 0 rgba(0, 0, 0, 0.25);
   }
 
   .menuOpen {
