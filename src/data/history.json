@@ -1,28 +1,34 @@
 [
   {
-    "role": "Amazon ML Summer School",
-    "organisation": "Amazon",
-    "startDate": "June, 2024",
-    "endDate": "Augest, 2024",
-    "experiences": ["Learnt about Machine Learning models", "Learnt about Generative Models"],
-    "imageSrc": "history/AmazonLogo.png"
-  },
-  {
-    "role": "Full Stack Intern",
-    "organisation": "SmartItFrame",
-    "startDate": "May, 2024",
-    "endDate": "Augest, 2024",
-    "experiences": ["Revamped the User Interface", "Formulated the Frontend and Backend Interactions"],
+    "role": "Full Stack Development Intern",
+    "organisation": "Smart IT Frame",
+    "startDate": "Apr 2024",
+    "endDate": "Sep 2024",
+    "experiences": [
+      "Revamped the user interface for improved user experience and responsiveness.",
+      "Formulated and implemented seamless frontend and backend interactions."
+    ],
     "imageSrc": "history/SmartItFrame.png"
   },
   {
-    "role": "Artificial Intellegence Intern",
-    "organisation": "IBM",
-    "startDate": "Apr, 2023",
-    "endDate": "Jun, 2023",
+    "role": "Amazon ML Summer School Participant",
+    "organisation": "Amazon",
+    "startDate": "June 2024",
+    "endDate": "August 2024",
     "experiences": [
-      "Worked on TensorFlow library",
-      "Helped me create a strong foundation in AI/ML field"
+      "Gained in-depth knowledge of Machine Learning models and their practical applications.",
+      "Explored advanced topics such as Generative Models and their use cases in AI."
+    ],
+    "imageSrc": "history/AmazonLogo.png"
+  },
+  {
+    "role": "Artificial Intelligence Intern",
+    "organisation": "IBM",
+    "startDate": "April 2023",
+    "endDate": "June 2023",
+    "experiences": [
+      "Worked extensively with the TensorFlow library to develop AI solutions.",
+      "Built a strong foundation in Artificial Intelligence and Machine Learning concepts."
     ],
     "imageSrc": "history/IBM.png"
   }

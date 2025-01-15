@@ -11,24 +11,7 @@ export const Projects = () => {
   const navigate = useNavigate();
   
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5, ease: "easeInOut" }}
-    >
       <section className={styles.container} id="projects">
-        <div
-          onClick={() => navigate('/')}
-          style={{
-            position: 'absolute',
-            left: '30px',
-            top: '40px',
-            cursor: 'pointer'
-          }}
-        >
-          <Back />
-        </div>
         <h2 className={styles.title}>Projects</h2>
         <div className={styles.projects}>
           {projects.map((project, id) => (
@@ -36,6 +19,5 @@ export const Projects = () => {
           ))}
         </div>
       </section>
-    </motion.div>
   );
 };

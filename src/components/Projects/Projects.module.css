@@ -1,17 +1,13 @@
 @import "../../vars.css";
 
 .container {
-  margin-top: 16vh;
   color: var(--color-text);
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 10%;
 }
 
 .title {
-  font-size: 35px;
+  font-size: 1.8vw;
   font-weight: 700;
-  letter-spacing: 1.75px;
+  letter-spacing: 0.09vw;
   text-transform: uppercase;
 }
 
@@ -22,8 +18,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 2vw;
+  gap: 1.6vw;
   width: 100%;
   transition: 1s;
 }
-

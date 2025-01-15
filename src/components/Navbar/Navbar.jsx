@@ -21,6 +21,9 @@ export const Navbar = ({ toggle, setToggle }) => {
           }
           alt="menu-button"
           onClick={() => { setMenuOpen(!menuOpen); setToggle(!toggle) }}
+          style={
+            {'height': '4vh',
+            'width': '2vw'}}
         />
       </div>
     </nav>

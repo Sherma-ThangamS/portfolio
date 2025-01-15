@@ -5,21 +5,27 @@ import { useParallax } from "react-scroll-parallax";
 import { Navbar } from "../Navbar/Navbar";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import Home from "./Home";
+import { About } from "../About/About";
+import { Experience } from "../Experience/Experience";
+import { Projects } from "../Projects/Projects";
+import { Contact } from "../Contact/Contact";
 
 export const Hero = () => {
-  const [toggle, setToggle]= useState(false);
-  useEffect(()=>{
-     setToggle(false)
-  },[])
-  
-  const navigate=useNavigate();
+  const [toggle, setToggle] = useState(false);
+  const [page, setPage] = useState("Home");
   useEffect(() => {
-    const container = document.querySelector(`.${styles.container}`);
-    const containerContent=document.querySelector(`.${styles.containerContent}`)
+    setToggle(false)
+  }, [])
+
+  const navigate = useNavigate();
+  useEffect(() => {
+    const container = document.querySelector(`.${styles.containerHero}`);
+    const containerContent = document.querySelector(`.${styles.containerContent}`)
     if (container) {
       container.classList.toggle(styles.active, toggle);
     }
-    if(containerContent){
+    if (containerContent) {
       containerContent.classList.toggle(styles.active, toggle);
     }
   }, [toggle]);
@@ -31,51 +37,45 @@ export const Hero = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
     >
-    <div className={styles.hero} onClick={()=>(toggle)? setToggle(!toggle):"toggle"}>
-      <Navbar toggle={toggle} setToggle={setToggle} />
-      <section className={styles.container}>
-        <section className={styles.main}>
-          <div className={styles.content}>
-            <div className={styles.containerContent}>
-              <div className={styles.contentText}>
-                <h1 className={styles.title}>Hi, I'm SHERMA THANGAM S</h1>
-                <p className={styles.description}>
-                I am computer science student with a keen eye for detail and a robust understanding of web development technologies. My passion lies in applying my skills to practical projects. I consider myself to be a lifelong learner.
-                </p>
-                <a href="mailto:sshermathangam@gmail.com" className={styles.contactBtn}>
-                  Contact Me
-                </a>
+      <div className={styles.hero} onClick={() => (toggle) ? setToggle(!toggle) : "toggle"}>
+        <Navbar toggle={toggle} setToggle={setToggle} />
+        <section className={styles.containerHero}>
+          <section className={styles.mainHero}>
+            <div className={styles.contentHero}>
+              <div className={styles.containerContent}>
+                {page === "Home" && <Home />}
+                {page === "About" && <About />}
+                {page === "Experience" && <Experience />}
+                {page === "Projects" && <Projects />}
+                {page === "Contact" && <Contact />}
               </div>
-              <img
-                src={getImageUrl("hero/hero.png")}
-                alt="Hero image of me"
-                className={styles.heroImg}
-              />
-                </div>
             </div>
-          <div className={`${styles.shadow} ${styles.one}`}></div>
-          <div className={`${styles.shadow} ${styles.two}`}></div>
+            <div className={`${styles.shadow} ${styles.one}`}></div>
+            <div className={`${styles.shadow} ${styles.two}`}></div>
+          </section>
+          <div className={styles.links}>
+            <ul
+              onClick={() => { setToggle(!toggle) }}
+            >
+              <li>
+                <button onClick={() => setPage("Home")} style={page==="Home"? {'color':'red'}:{}}>Hero</button>
+              </li>
+              <li>
+                <button onClick={() => setPage("About")} style={page==="About"? {'color':'red'}:{}}>About</button>
+              </li>
+              <li>
+                <button onClick={() => setPage("Experience")} style={page==="Experience" ? {'color':'red'}:{}}>Experience</button>
+              </li>
+              <li>
+                <button onClick={() => setPage("Projects")} style={page==="Projects" ? {'color':'red'}:{}}>Projects</button>
+              </li>
+              <li>
+                <button onClick={() => setPage("Contact")} style={page==="Contact"? {'color':'red'}:{}}>Contact</button>
+              </li>
+            </ul>
+          </div>
         </section>
-        <div className={styles.links}>
-      <ul
-          onClick={() => {setToggle(!toggle)}}
-        >
-          <li>
-            <button  onClick={()=>navigate("/about")}>About</button>
-          </li>
-          <li>
-            <button  onClick={()=>navigate("/experience")}>Experience</button>
-          </li>
-          <li>
-            <button  onClick={()=>navigate("/projects")}>Projects</button>
-          </li>
-          <li>
-            <button onClick={()=>navigate("/contact")}>Contact</button>
-          </li>
-        </ul>
       </div>
-      </section>
-    </div>
-     </motion.div>
+    </motion.div>
   );
 };

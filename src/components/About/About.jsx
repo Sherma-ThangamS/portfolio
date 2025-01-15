@@ -10,24 +10,7 @@ import { useNavigate } from "react-router-dom";
 export const About = () => {
   const navigate = useNavigate();
   return (
-    <motion.div
-      // initial={{ opacity: 0 }}
-      // animate={{ opacity: 1 }}
-      // exit={{ opacity: 0 }}
-      // transition={{ duration: 0.5, ease: "easeInOut" }} // Add transition settings
-    >
-      <section className={styles.container} id="about">
-        <div
-          onClick={() => navigate("/")}
-          style={{
-            position: "absolute",
-            left: "-150px",
-            top: "-60px",
-            cursor: "pointer",
-          }}
-        >
-          <Back />
-        </div>
+      <div className={styles.container} id="about">
         <h2 className={styles.title}>About</h2>
         <div className={styles.content}>
           <img
@@ -72,7 +55,6 @@ export const About = () => {
             </li>
           </ul>
         </div>
-      </section>
-    </motion.div>
+      </div>
   );
 };
