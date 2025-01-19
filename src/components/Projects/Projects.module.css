@@ -12,13 +12,19 @@
 }
 
 .projects {
-  margin-top: 10vh;
+  margin-top: 1vh;
+  height: 70vh;
+  overflow-y: scroll;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 1.6vw;
+  gap: 1vw;
   width: 100%;
   transition: 1s;
+}
+
+.projects::-webkit-scrollbar {
+  display: none;
 }

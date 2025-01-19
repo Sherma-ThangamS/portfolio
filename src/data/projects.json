@@ -1,5 +1,13 @@
 [
   {
+    "title": "Newsify",
+    "imageSrc": "projects/newsify.png",
+    "description": "Newsify is a news aggregation application aimed at enhancing awareness and user engagement by curating and delivering news from verified local and global sources.",
+    "skills": ["React.js", "Tailwind CSS","Firestore","ResponsiveVoice"],
+    "demo": "https://newsify-ten.vercel.app/",
+    "source": "https://newsify-ten.vercel.app/"
+  },
+  {
     "title": "PriceVista",
     "imageSrc": "projects/priceVista.jpg",
     "description": "📈Price Tracking and 🚨 Smart Notifications: Get real-time updates on the average, highest, and lowest prices for products from any Amazon link. Users receive instant email notifications when a product's price drops by a whopping 40%!",
@@ -22,6 +30,14 @@
     "skills": ["LLMs","RAG","Multi-Modal","NLP"],
     "demo": "https://orcamedia.vercel.app/",
     "source": "https://github.com/Sherma-ThangamS/Social_Media"
+  },
+  {
+    "title": "Shinka Jinzai",
+    "imageSrc": "projects/shinka.png",
+    "description": "AI based frame  interpolation, video generation and display system for WMS services",
+    "skills": ["NextJS","Tailwind CSS","Firestore","Generative AI"],
+    "demo": "https://shinka-jinzai.vercel.app/",
+    "source": "https://github.com/Sherma-ThangamS/SIH-2024-Teammates"
   },
   {
     "title": "Notes Making",

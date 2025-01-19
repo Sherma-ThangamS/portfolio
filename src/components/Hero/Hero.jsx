@@ -10,6 +10,7 @@ import { About } from "../About/About";
 import { Experience } from "../Experience/Experience";
 import { Projects } from "../Projects/Projects";
 import { Contact } from "../Contact/Contact";
+import Profiles from "../Profile/Profiles";
 
 export const Hero = () => {
   const [toggle, setToggle] = useState(false);
@@ -38,7 +39,7 @@ export const Hero = () => {
       transition={{ duration: 1, ease: "easeInOut" }}
     >
       <div className={styles.hero} onClick={() => (toggle) ? setToggle(!toggle) : "toggle"}>
-        <Navbar toggle={toggle} setToggle={setToggle} />
+        <Navbar toggle={toggle} setToggle={setToggle} setPage={setPage}/>
         <section className={styles.containerHero}>
           <section className={styles.mainHero}>
             <div className={styles.contentHero}>
@@ -48,6 +49,7 @@ export const Hero = () => {
                 {page === "Experience" && <Experience />}
                 {page === "Projects" && <Projects />}
                 {page === "Contact" && <Contact />}
+                {page === "Profile" && <Profiles/>}
               </div>
             </div>
             <div className={`${styles.shadow} ${styles.one}`}></div>
@@ -62,6 +64,9 @@ export const Hero = () => {
               </li>
               <li>
                 <button onClick={() => setPage("About")} style={page==="About"? {'color':'red'}:{}}>About</button>
+              </li>
+              <li>
+                <button onClick={()=>setPage("Profile")} style={page==="Profile" ? {'color':'red'}:{}}>Feats</button>
               </li>
               <li>
                 <button onClick={() => setPage("Experience")} style={page==="Experience" ? {'color':'red'}:{}}>Experience</button>

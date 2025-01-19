@@ -1,0 +1,83 @@
+@import "../../vars.css";
+
+.profiles h1 {
+    font-size: 2vw;
+    color: #fff;
+    margin-bottom: 3vw;
+}
+
+.Content {
+    position: relative;
+    width: 85vw;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+}
+
+.profileCard {
+    width: 20vw;
+    height: 40vh;
+    text-decoration: none;
+    color: black;
+    padding: 2vh 1vw;
+    border: 0.1vw solid white;
+    margin: 1vw;
+    border-radius: 0.5vw;
+    background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+    box-shadow: 0 1.33vh 1.17vh 0 #04152d;
+}
+
+.profileCard span {
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ProfileImage {
+    width: 100%;
+    height: 90%;
+}
+
+.ProfileImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.scrollingContainer {
+    display: flex;
+    animation: loop 25s linear infinite;
+}
+
+.Content:hover .scrollingContainer {
+    animation-play-state: paused;
+}
+
+.Content::after,
+.Content::before{
+    position: absolute;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    bottom: 0;
+    content: "";
+    z-index: 2;
+}
+.Content::after{
+    right: 0;
+    background: linear-gradient(to right,rgba(255,255,255,0),var(--color-bg));
+}
+.Content::before{
+    left: 0;
+    background: linear-gradient(to left,rgba(255,255,255,0),var(--color-bg));
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

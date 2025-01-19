@@ -1,11 +1,18 @@
 import React from 'react'
 import styles from "./Hero.module.css";
 import { getImageUrl } from '../../utils';
+import { motion } from "framer-motion";
 
 const Home = () => {
     return (
-        
-            <>
+        <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      className={styles.containerContentHome}
+    >
+    <>
             <div className={styles.contentText}>
                 <h1 className={styles.title}>Hi, I'm SHERMA THANGAM S</h1>
                 <p className={styles.description}>
@@ -24,7 +31,7 @@ const Home = () => {
                 className={styles.heroImg}
             />
             </>
-        
+         </motion.div>
     )
 }
 

@@ -1,6 +1,7 @@
 @import "../../vars.css";
 
 .container {
+  margin: 1vw;
   width: 20vw;
   height: 45vh;
   display: flex;
