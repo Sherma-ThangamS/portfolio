@@ -48,7 +48,7 @@ This repository houses my modern, single-page developer portfolio engineered wit
 
 ### Prerequisites
 
-- **Node.js**: v18.x or v20.x
+- **Node.js**: v20.x, v22.x, or v26.x
 - **npm** or **yarn**
 
 ### Installation
