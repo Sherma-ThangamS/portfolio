@@ -1,104 +1,208 @@
-@import "../../vars.css";
-
-/* .container {
-  position: relative;
-  display: flex;
-  /* align-items: center; 
-  justify-content: space-between;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  z-index: 1;
-  padding: 5vw 2vw;
-  border-radius: 2vw;
-  background: var(--color-bg);
-  height: 85vh;
-}
-.containerContent.active {
-  border-style: inset;
-  border-color: rgba(153, 150, 150, 0.6);
-} */
-.title {
-  color: var(--color-text);
-  font-size: 1.83vw; 
-  font-weight: 700;
-  letter-spacing: 0.09vw; 
-  text-transform: uppercase;
+.aboutSection {
+  padding: 6rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.content {
-  display: flex;
-  flex-direction: row;
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  padding: 0 1.5rem;
+}
+
+.sectionBadge {
+  display: inline-flex;
   align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid var(--border-highlight);
+  border-radius: var(--radius-full);
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
 }
 
-.aboutImage {
-  width: 35vw; 
-  border-radius: 0.52vw; 
-  box-shadow: 0 0.21vw 0.42vw rgba(0, 0, 0, 0.2); 
+.sectionTitle {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
 }
 
-.aboutItems {
-  color: var(--color-text);
+.sectionSubtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 0 1.5rem;
+}
+
+/* Overview Banner Card */
+.overviewCard {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 2.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.overviewCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-brand);
+}
+
+.overviewCard:hover {
+  border-color: var(--border-highlight);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.overviewContent {
+  margin-bottom: 1.5rem;
+}
+
+.overviewHeading {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+}
+
+.overviewText {
+  font-size: 1.02rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.overviewText strong {
+  color: var(--text-main);
+}
+
+.overviewPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.pillItem {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  background: rgba(6, 182, 212, 0.08);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+/* 4 Symmetrical Architectural Pillars */
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.pillarCard {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2.6vw; 
-  padding-left: 1.04vw; 
+  transition: all 0.3s ease;
+  position: relative;
 }
 
-.aboutItem {
+.pillarCard:hover {
+  border-color: var(--border-highlight);
+  background: var(--bg-card-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.pillarHeader {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  border-radius: 1.04vw; 
-  list-style: none;
-  padding: 1.3vw; 
-  background-image: linear-gradient(
-    90deg,
-    rgba(165, 215, 232, 0.42) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.4s, box-shadow 0.4s;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
 }
 
-.aboutItem:hover {
-  background-size: 100% 100%;
-  box-shadow: 0 0.21vw 0.63vw rgba(0, 0, 0, 0.3); 
+.pillarIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-sm);
+  background: rgba(99, 102, 241, 0.15);
+  color: var(--color-primary);
+  border: 1px solid var(--border-subtle);
 }
 
-.aboutItem h3 {
-  font-size: 1.3vw; 
-  font-weight: 600;
-  margin-left: 0.78vw;
+.pillarIndex {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
 }
 
-.aboutItem p {
-  font-size: 1.3vw; 
-  margin-left: 0.78vw;
+.pillarTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.65rem;
 }
 
-@media screen and (max-width: 830px) {
-  .container {
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
+.pillarDescription {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.pillarTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: auto;
+}
+
+.tagPill {
+  font-size: 0.74rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+}
+
+@media (max-width: 868px) {
+  .pillarsGrid {
+    grid-template-columns: 1fr;
   }
 
-  .content {
-    flex-direction: column;
-  }
-
-  .aboutImage {
-    display: none;
-  }
-
-  .aboutItems {
-    margin-top: 1.51vh; 
-  }
-
-  .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
+  .overviewCard {
+    padding: 1.75rem;
   }
 }

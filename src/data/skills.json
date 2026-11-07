@@ -1,46 +1,101 @@
 [
   {
-    "title": "HTML",
-    "imageSrc": "skills/html.png"
+    "title": "Linux Internals",
+    "category": "systems",
+    "level": "Advanced"
   },
   {
-    "title": "CSS",
-    "imageSrc": "skills/css.png"
+    "title": "KVM & QEMU",
+    "category": "systems",
+    "level": "Advanced"
   },
   {
-    "title": "JavaScript",
-    "imageSrc": "skills/JavaScript.webp"
+    "title": "Libvirt",
+    "category": "systems",
+    "level": "Advanced"
   },
   {
-    "title": "Nextjs",
-    "imageSrc": "skills/Nextjs.png"
+    "title": "Bare-Metal OS Provisioning",
+    "category": "systems",
+    "level": "Advanced"
   },
   {
-    "title": "React",
-    "imageSrc": "skills/react.png"
+    "title": "NUMA Architecture",
+    "category": "systems",
+    "level": "Advanced"
   },
   {
-    "title": "MySql",
-    "imageSrc": "skills/sq.png"
+    "title": "Docker",
+    "category": "systems",
+    "level": "Proficient"
   },
   {
-    "title": "express",
-    "imageSrc": "skills/express.png"
+    "title": "Go (Golang)",
+    "category": "languages",
+    "level": "Advanced"
   },
   {
-    "title": "Nodejs",
-    "imageSrc": "skills/nodejs.png"
+    "title": "Java (Oracle Certified)",
+    "category": "languages",
+    "level": "Advanced"
   },
   {
-    "title": "Tensorflow",
-    "imageSrc": "skills/ten.png"
+    "title": "TypeScript",
+    "category": "languages",
+    "level": "Proficient"
   },
   {
-    "title": "Machine Learning",
-    "imageSrc": "skills/ml.png"
+    "title": "Python",
+    "category": "languages",
+    "level": "Proficient"
   },
   {
-    "title": "Flutter",
-    "imageSrc": "skills/flu.png"
+    "title": "PostgreSQL (Atomic Locks)",
+    "category": "backend",
+    "level": "Proficient"
+  },
+  {
+    "title": "Redis (Pub/Sub & Cache)",
+    "category": "backend",
+    "level": "Proficient"
+  },
+  {
+    "title": "BullMQ Job Queues",
+    "category": "backend",
+    "level": "Proficient"
+  },
+  {
+    "title": "Node.js & Express",
+    "category": "backend",
+    "imageSrc": "skills/nodejs.png",
+    "level": "Proficient"
+  },
+  {
+    "title": "Next.js (SSR)",
+    "category": "frontend",
+    "imageSrc": "skills/Nextjs.png",
+    "level": "Proficient"
+  },
+  {
+    "title": "React.js",
+    "category": "frontend",
+    "imageSrc": "skills/react.png",
+    "level": "Proficient"
+  },
+  {
+    "title": "LangChain & RAG",
+    "category": "ai",
+    "level": "Proficient"
+  },
+  {
+    "title": "FAISS Vector Search",
+    "category": "ai",
+    "level": "Proficient"
+  },
+  {
+    "title": "PyTorch & TensorFlow",
+    "category": "ai",
+    "imageSrc": "skills/ten.png",
+    "level": "Proficient"
   }
 ]

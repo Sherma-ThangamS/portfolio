@@ -1,50 +1,100 @@
 [
   {
-    "title": "Newsify",
-    "imageSrc": "projects/newsify.png",
-    "description": "Newsify is a news aggregation application aimed at enhancing awareness and user engagement by curating and delivering news from verified local and global sources.",
-    "skills": ["React.js", "Tailwind CSS","Firestore","ResponsiveVoice"],
-    "demo": "https://newsify-ten.vercel.app/",
-    "source": "https://newsify-ten.vercel.app/"
+    "title": "Real-Time Stock Trading & Matching Engine",
+    "imageSrc": "projects/trading.svg",
+    "category": "Systems & Distributed",
+    "featured": true,
+    "points": [
+      "Engineered an in-memory order-matching engine in TypeScript and Node.js for high-concurrency order books.",
+      "Employs PostgreSQL row-level locks for atomic balance reservations, preventing race conditions under concurrent trading.",
+      "Integrates Redis Pub/Sub for sub-200ms market state broadcasting and BullMQ for reliable distributed task queue management."
+    ],
+    "skills": ["TypeScript", "Node.js", "PostgreSQL", "Redis Pub/Sub", "BullMQ", "Socket.IO", "Docker"],
+    "demo": null,
+    "source": "https://github.com/Sherma-ThangamS/TradingSystemAPI"
+  },
+  {
+    "title": "Medical Assistant (Orca / MediBot)",
+    "imageSrc": "projects/medi-bot.png",
+    "category": "AI / ML",
+    "featured": true,
+    "points": [
+      "Built a clinical diagnostic assistant using LangChain, FAISS vector index, and Google Gemini Pro.",
+      "Features multi-modal symptom parsing with source-grounded clinical reference retrieval.",
+      "Reduces medical query hallucinations by 25% through context-grounded retrieval-augmented generation (RAG)."
+    ],
+    "skills": ["Python", "LangChain", "FAISS", "Gemini Pro", "PyTorch", "FastAPI"],
+    "demo": null,
+    "source": "https://github.com/Sherma-ThangamS/Medical_Bot"
   },
   {
     "title": "PriceVista",
     "imageSrc": "projects/priceVista.jpg",
-    "description": "📈Price Tracking and 🚨 Smart Notifications: Get real-time updates on the average, highest, and lowest prices for products from any Amazon link. Users receive instant email notifications when a product's price drops by a whopping 40%!",
-    "skills": ["NextJS", "MongoDB","Web Scraping"],
+    "category": "Full Stack",
+    "featured": true,
+    "points": [
+      "Automated e-commerce price monitoring platform tracking Amazon products with historical price trend charts.",
+      "Runs automated scraping workflows with Cheerio and maintains historical price documents in MongoDB.",
+      "Dispatches instant automated email notifications to subscribers when prices drop by 40% or more."
+    ],
+    "skills": ["Next.js", "TypeScript", "MongoDB", "Web Scraping", "Cheerio", "Tailwind CSS"],
     "demo": "https://pricevista.vercel.app/",
     "source": "https://github.com/Sherma-ThangamS/Price-Vista"
   },
   {
-    "title": "OrcaMedia",
-    "imageSrc": "projects/orcamedia.jpg",
-    "description": " Implemented core functionalities such as user authentication, post creation, and interaction with a clean and intuitive UI designed with React.",
-    "skills": ["MySQL","ReactJS","Express","NodeJS"],
-    "demo": "https://orcamedia.vercel.app/",
-    "source": "https://github.com/Sherma-ThangamS/Social_Media"
-  },
-  {
-    "title": "Medical Assistant",
-    "imageSrc": "projects/medi-bot.png",
-    "description": "MediBot is a medical chatbot powered by advanced AI and natural language processing. It can answer your medical queries, provide information on various health topics, and assist you in finding the information you need.",
-    "skills": ["LLMs","RAG","Multi-Modal","NLP"],
-    "demo": "https://orcamedia.vercel.app/",
-    "source": "https://github.com/Sherma-ThangamS/Social_Media"
-  },
-  {
-    "title": "Shinka Jinzai",
+    "title": "Shinka Jinzai (SIH 2024)",
     "imageSrc": "projects/shinka.png",
-    "description": "AI based frame  interpolation, video generation and display system for WMS services",
-    "skills": ["NextJS","Tailwind CSS","Firestore","Generative AI"],
+    "category": "AI / ML",
+    "featured": true,
+    "points": [
+      "Smart India Hackathon 2024 finalist project for Warehouse Management Services (WMS).",
+      "Performs deep-learning video frame interpolation and real-time visual telemetry displays.",
+      "Constructed with Next.js, Tailwind CSS, Firestore, and AI video synthesis pipelines."
+    ],
+    "skills": ["Next.js", "Generative AI", "Computer Vision", "Tailwind CSS", "Firestore"],
     "demo": "https://shinka-jinzai.vercel.app/",
     "source": "https://github.com/Sherma-ThangamS/SIH-2024-Teammates"
   },
   {
-    "title": "Notes Making",
-    "imageSrc": "projects/Notes.jpg",
-    "description": "I learned flutter language while working on this project which will be invaluable for future, more complex projects",
-    "skills": ["Flutter","App Development"],
-    "demo": "https://sherma-thangams.github.io/Flutter_Notes_making_app/#/",
-    "source": "https://github.com/Sherma-ThangamS/Flutter_Notes_making_app"
+    "title": "AI Hologram Video Generator",
+    "imageSrc": "projects/medi-bot.png",
+    "category": "AI / ML",
+    "featured": false,
+    "points": [
+      "Academic research converting standard 2D video feeds into 3D holographic projection formats in real-time.",
+      "Implements deep neural depth estimation and spatial rendering pipelines for optical pyramid displays.",
+      "Peer-reviewed research publication indexed in Semantic Scholar and ResearchGate."
+    ],
+    "skills": ["Python", "Deep Learning", "Computer Vision", "3D Rendering", "Research"],
+    "demo": null,
+    "source": "https://github.com/Sherma-ThangamS"
+  },
+  {
+    "title": "Newsify",
+    "imageSrc": "projects/newsify.png",
+    "category": "Full Stack",
+    "featured": false,
+    "points": [
+      "Curates verified real-time regional and international news feeds into an accessible news aggregation feed.",
+      "Incorporates hands-free text-to-speech audio narration using ResponsiveVoice synthesis.",
+      "Engineered with React.js, Tailwind CSS, Google Firestore, and third-party REST APIs."
+    ],
+    "skills": ["React.js", "Tailwind CSS", "Firestore", "ResponsiveVoice", "REST APIs"],
+    "demo": "https://newsify-ten.vercel.app/",
+    "source": "https://github.com/Sherma-ThangamS/portfolio"
+  },
+  {
+    "title": "OrcaMedia",
+    "imageSrc": "projects/orcamedia.jpg",
+    "category": "Full Stack",
+    "featured": false,
+    "points": [
+      "Full-stack social platform developed with React, Node.js, Express, and relational MySQL.",
+      "Implements JWT authentication, dynamic user feeds, media uploads, and post interaction workflows.",
+      "Built with responsive modular UI components and resilient backend API error handling."
+    ],
+    "skills": ["React.js", "Node.js", "Express.js", "MySQL", "JWT Auth", "REST APIs"],
+    "demo": null,
+    "source": "https://github.com/Sherma-ThangamS/Social_Media"
   }
 ]

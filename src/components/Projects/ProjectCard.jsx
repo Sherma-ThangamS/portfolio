@@ -1,44 +1,101 @@
-import React from "react";
-
+import React, { useState } from "react";
 import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
+import { IconExternal, IconGithub, IconSparkles } from "../Icons/Icons";
+import { motion } from "framer-motion";
 
-export const ProjectCard = ({
-  project: { title, imageSrc, description, skills, demo, source },
-}) => {
+export const ProjectCard = ({ project }) => {
+  const { title, imageSrc, description, points, skills, demo, source, category, featured } = project;
+  const [imgError, setImgError] = useState(false);
+
+  // Only show live demo if there is an active deployment (not a repo or paper link)
+  const isLiveDemo = Boolean(
+    demo &&
+      !demo.includes("github.com") &&
+      !demo.includes("semanticscholar.org") &&
+      demo !== source
+  );
+
   return (
-    <div className={styles.container}>
-      <div className={styles.innercard}>
-        <div className={styles.frontcard}>
+    <motion.div
+      layout
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, scale: 0.95 }}
+      transition={{ duration: 0.3 }}
+      className={styles.projectCard}
+    >
+      <div className={`${styles.imageContainer} ${imgError ? styles.imageFallbackContainer : ""}`}>
+        {!imgError && (
           <img
             src={getImageUrl(imageSrc)}
-            alt={`Image of ${title}`}
-            className={styles.image}
+            alt={title}
+            className={styles.projectImage}
+            onError={() => setImgError(true)}
           />
-          <ul className={styles.skills}>
-            {skills.map((skill, id) => {
-              return (
-                <li key={id} className={styles.skill}>
-                  {skill}
-                </li>
-              );
-            })}
+        )}
+        <div className={styles.imageOverlay}></div>
+        {category && <span className={styles.categoryBadge}>{category}</span>}
+        {featured && (
+          <span className={styles.featuredBadge}>
+            <IconSparkles size={12} />
+            <span>Featured</span>
+          </span>
+        )}
+      </div>
+
+      <div className={styles.cardBody}>
+        <h3 className={styles.projectTitle}>{title}</h3>
+
+        {/* Bullet Points */}
+        {points && points.length > 0 ? (
+          <ul className={styles.projectPoints}>
+            {points.map((point, idx) => (
+              <li key={idx} className={styles.projectPoint}>
+                {point}
+              </li>
+            ))}
           </ul>
+        ) : (
+          <p className={styles.projectDescription}>{description}</p>
+        )}
+
+        {/* Tech tags */}
+        <div className={styles.skillsList}>
+          {skills.map((skill, index) => (
+            <span key={index} className={styles.skillPill}>
+              {skill}
+            </span>
+          ))}
         </div>
 
-        <div className={styles.backcard}>
-          <h3 className={styles.title}>{title}</h3>
-          <p className={styles.description}>{description}</p>
-          <div className={styles.links}>
-            <a href={demo} className={styles.link}>
-              Demo
+        {/* Actions */}
+        <div className={styles.cardActions}>
+          {isLiveDemo && (
+            <a
+              href={demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.primaryAction}
+            >
+              <span>Live Demo</span>
+              <IconExternal size={15} />
             </a>
-            <a href={source} className={styles.link}>
-              Source
+          )}
+          {source && (
+            <a
+              href={source}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={isLiveDemo ? styles.secondaryAction : styles.primaryAction}
+              title="View Source Code"
+            >
+              <IconGithub size={16} />
+              <span>Source Code</span>
             </a>
-          </div>
+          )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

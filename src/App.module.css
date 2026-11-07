@@ -1,16 +1,38 @@
-@import "./vars.css";
-
-.App {
-  background-color: var(--color-bg);
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+.app {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
-.circle {
-  width: 1.25vw;
-  height: 2.4vh;
+
+.mainContent {
+  position: relative;
+  z-index: 1;
+}
+
+/* Subtle background ambient light particles */
+.bgAura1 {
   position: fixed;
-  display: block;
-  border-radius:20px;
-  pointer-events:none;
+  top: -10vw;
+  left: -10vw;
+  width: 45vw;
+  height: 45vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, rgba(99, 102, 241, 0) 70%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bgAura2 {
+  position: fixed;
+  bottom: 5vw;
+  right: -10vw;
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.08) 0%, rgba(6, 182, 212, 0) 70%);
+  filter: blur(70px);
+  pointer-events: none;
+  z-index: 0;
 }

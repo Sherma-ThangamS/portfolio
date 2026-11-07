@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="100%" stop-color="#141e33"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d2ff"/>
+      <stop offset="100%" stop-color="#00f5a0"/>
+    </linearGradient>
+    <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00f5a0" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00f5a0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="16" fill="url(#bg)"/>
+  
+  <!-- Grid Lines -->
+  <line x1="40" y1="70" x2="560" y2="70" stroke="#1f2d4d" stroke-dasharray="4"/>
+  <line x1="40" y1="140" x2="560" y2="140" stroke="#1f2d4d" stroke-dasharray="4"/>
+  <line x1="40" y1="210" x2="560" y2="210" stroke="#1f2d4d" stroke-dasharray="4"/>
+  <line x1="40" y1="280" x2="560" y2="280" stroke="#1f2d4d" stroke-dasharray="4"/>
+  
+  <!-- Area under curve -->
+  <path d="M 40,260 Q 110,240 160,200 T 260,180 T 360,110 T 460,130 T 560,70 L 560,300 L 40,300 Z" fill="url(#areaGrad)"/>
+  
+  <!-- Line chart -->
+  <path d="M 40,260 Q 110,240 160,200 T 260,180 T 360,110 T 460,130 T 560,70" fill="none" stroke="url(#lineGrad)" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Candlesticks sample -->
+  <line x1="120" y1="210" x2="120" y2="255" stroke="#00f5a0" stroke-width="2"/>
+  <rect x="114" y="220" width="12" height="25" fill="#00f5a0" rx="2"/>
+  
+  <line x1="220" y1="160" x2="220" y2="210" stroke="#ff4b72" stroke-width="2"/>
+  <rect x="214" y="170" width="12" height="30" fill="#ff4b72" rx="2"/>
+
+  <line x1="320" y1="120" x2="320" y2="180" stroke="#00f5a0" stroke-width="2"/>
+  <rect x="314" y="130" width="12" height="35" fill="#00f5a0" rx="2"/>
+
+  <line x1="420" y1="90" x2="420" y2="150" stroke="#00f5a0" stroke-width="2"/>
+  <rect x="414" y="100" width="12" height="30" fill="#00f5a0" rx="2"/>
+
+  <!-- Badge / Pill -->
+  <rect x="40" y="25" width="220" height="30" rx="6" fill="#13233e" stroke="#00d2ff" stroke-width="1"/>
+  <circle cx="56" cy="40" r="5" fill="#00f5a0"/>
+  <text x="70" y="45" font-family="monospace, sans-serif" font-size="13" font-weight="700" fill="#e2e8f0">REAL-TIME MATCHING ENGINE</text>
+  
+  <!-- Concurrency & Order stats overlay -->
+  <rect x="380" y="25" width="180" height="30" rx="6" fill="#13233e" stroke="#00f5a0" stroke-width="1"/>
+  <text x="470" y="45" font-family="monospace, sans-serif" font-size="13" font-weight="700" fill="#00f5a0" text-anchor="middle">&lt; 200ms LATENCY</text>
+</svg>

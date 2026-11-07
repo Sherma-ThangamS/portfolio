@@ -1,60 +1,114 @@
-import React, { useEffect } from "react";
-import { motion } from "framer-motion"; // Import motion
+import React from "react";
 import styles from "./About.module.css";
-import { getImageUrl } from "../../utils";
-import Back from "../Icons/Back";
-import { defineElement } from "@lordicon/element";
-import lottie from "lottie-web";
-import { useNavigate } from "react-router-dom";
+import {
+  IconBrain,
+  IconCode,
+  IconDatabase,
+  IconLayers,
+  IconSparkles,
+} from "../Icons/Icons";
+import { motion } from "framer-motion";
 
 export const About = () => {
-  const navigate = useNavigate();
+  const pillars = [
+    {
+      icon: <IconLayers size={24} />,
+      title: "Virtualization & Cloud Infra",
+      description:
+        "Kernel-level virtualization, hypervisor orchestration, and automated VM lifecycle management using KVM, QEMU, Libvirt, and NUMA-aware core tuning.",
+      tags: ["KVM", "QEMU", "Libvirt", "NUMA Pinning", "Linux Internals"],
+    },
+    {
+      icon: <IconDatabase size={24} />,
+      title: "High-Concurrency Systems",
+      description:
+        "Transaction-safe distributed backends utilizing PostgreSQL row-level locks, Redis Pub/Sub, BullMQ task queues, and async event daemons.",
+      tags: ["PostgreSQL Locks", "Redis Pub/Sub", "BullMQ", "Socket.IO", "Docker"],
+    },
+    {
+      icon: <IconCode size={24} />,
+      title: "Algorithmic Problem Solving",
+      description:
+        "Top 2% global ranking on LeetCode (Knight, 2,000+ rating) with over 900+ competitive problems solved across complex data structures.",
+      tags: ["LeetCode Knight", "Codeforces", "Java SE 11", "Go", "Data Structures"],
+    },
+    {
+      icon: <IconBrain size={24} />,
+      title: "Applied AI & Retrieval (RAG)",
+      description:
+        "Context-grounded intelligent tools with LangChain, FAISS vector indexing, Gemini Pro, and specialized training via Amazon ML Summer School.",
+      tags: ["LangChain", "FAISS", "Gemini Pro", "PyTorch", "RAG"],
+    },
+  ];
+
   return (
-      <div className={styles.container} id="about">
-        <h2 className={styles.title}>About</h2>
-        <div className={styles.content}>
-          <img
-            src='https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/a6016a2f184edaf900a7f86fa3db9c30-1661328032/Chompers_Twitter/make-pixel-art-anime-style-game-style-additional-animation.gif'
-            alt="Me sitting with a laptop"
-            className={styles.aboutImage}
-          />
-          <ul className={styles.aboutItems}>
-            <li className={styles.aboutItem}>
-              <img
-                src={getImageUrl("about/cursorIcon.png")}
-                alt="Cursor icon"
-              />
-              <div className={styles.aboutItemText}>
-                <h3>Full Stack Developer</h3>
-                <p>
-                As a full-stack developer, I craft responsive, optimized
-                applications with a keen eye for detail and design.
-                </p>
+    <section id="about" className={styles.aboutSection}>
+      <div className={styles.sectionHeader}>
+        <div className={styles.sectionBadge}>
+          <IconSparkles size={14} />
+          <span>Profile & Focus</span>
+        </div>
+        <h2 className={styles.sectionTitle}>About Me</h2>
+        <p className={styles.sectionSubtitle}>
+          Building high-performance virtualization infrastructure, distributed backend engines, and scalable systems.
+        </p>
+      </div>
+
+      <div className={styles.container}>
+        {/* Top Overview Banner Card */}
+        <motion.div
+          className={styles.overviewCard}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className={styles.overviewContent}>
+            <h3 className={styles.overviewHeading}>
+              Systems & Cloud Infrastructure Engineer
+            </h3>
+            <p className={styles.overviewText}>
+              I specialize in low-level Linux systems, virtualization, and distributed backend architectures. Currently building enterprise hypervisor compute automation at <strong>Zoho Corporation</strong>, I bridge the gap between kernel-level virtualization and high-throughput application backends.
+            </p>
+          </div>
+
+          <div className={styles.overviewPills}>
+            <span className={styles.pillItem}>Linux Kernel & KVM</span>
+            <span className={styles.pillItem}>Distributed Systems</span>
+            <span className={styles.pillItem}>High-Concurrency Engines</span>
+            <span className={styles.pillItem}>LeetCode Knight (2000+)</span>
+            <span className={styles.pillItem}>Oracle Certified Java 11</span>
+          </div>
+        </motion.div>
+
+        {/* 4 Balanced Architectural Pillars */}
+        <div className={styles.pillarsGrid}>
+          {pillars.map((pillar, index) => (
+            <motion.div
+              key={pillar.title}
+              className={styles.pillarCard}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+            >
+              <div className={styles.pillarHeader}>
+                <div className={styles.pillarIconWrapper}>{pillar.icon}</div>
+                <span className={styles.pillarIndex}>0{index + 1}</span>
               </div>
-            </li>
-            <li className={styles.aboutItem}>
-              <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
-              <div className={styles.aboutItemText}>
-                <h3>Machine Learning Engineer</h3>
-                <p>
-                  Passionate machine learning engineer with experience in
-                  predictive modeling and generative modeling
-                </p>
+              <h4 className={styles.pillarTitle}>{pillar.title}</h4>
+              <p className={styles.pillarDescription}>{pillar.description}</p>
+              <div className={styles.pillarTags}>
+                {pillar.tags.map((tag) => (
+                  <span key={tag} className={styles.tagPill}>
+                    {tag}
+                  </span>
+                ))}
               </div>
-            </li>
-            <li className={styles.aboutItem}>
-              <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
-              <div className={styles.aboutItemText}>
-                <h3>Data Science</h3>
-                <p>
-                  I have hands-on experience in Pandas, NumPy, Scikit-Learn, and
-                  TensorFlow, key tools for data manipulation, analysis, and
-                  machine learning.
-                </p>
-              </div>
-            </li>
-          </ul>
+            </motion.div>
+          ))}
         </div>
       </div>
+    </section>
   );
 };

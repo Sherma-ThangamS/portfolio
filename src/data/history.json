@@ -1,35 +1,61 @@
 [
   {
-    "role": "Full Stack Development Intern",
+    "role": "Member Technical Staff (Cloud Infrastructure)",
+    "organisation": "Zoho Corporation",
+    "location": "Chennai, India",
+    "startDate": "May 2026",
+    "endDate": "Present",
+    "type": "Full-Time",
+    "experiences": [
+      "Automated VM lifecycle and reclamation tooling across distributed data centers, identifying and reclaiming unused server resources.",
+      "Optimized bare-metal VM provisioning pipelines, achieving a 90% reduction in deployment failure rates with minimal custom OS images.",
+      "Designed an event-driven callback daemon in Go and Java, replacing legacy polling mechanisms and slashing CPU and network overhead for infrastructure tasks."
+    ],
+    "skills": ["KVM", "QEMU", "Libvirt", "Go (Golang)", "Java", "Linux Internals", "Systems Automation"],
+    "imageSrc": "history/zoho.svg"
+  },
+  {
+    "role": "Technical Trainee (Systems & Virtualization)",
+    "organisation": "Zoho Corporation",
+    "location": "Chennai, India",
+    "startDate": "Aug 2024",
+    "endDate": "Apr 2026",
+    "type": "Internship",
+    "experiences": [
+      "Accelerated VM setup turnaround from 22 minutes to 2 minutes by replacing legacy installation scripts with automated preloaded QCOW2 image provisioning pipelines.",
+      "Improved hypervisor compute throughput and memory cache locality by 30% through NUMA-aware CPU pinning and core topology mapping across multi-socket host architectures.",
+      "Built diagnostic telemetry scripts interfacing directly with the libvirt API to identify resource contention, thread starvation, and host memory fragmentation."
+    ],
+    "skills": ["Virtualization", "KVM", "QEMU", "NUMA Pinning", "QCOW2", "Shell Scripting", "libvirt"],
+    "imageSrc": "history/zoho.svg"
+  },
+  {
+    "role": "Software Engineer Intern",
     "organisation": "Smart IT Frame",
+    "location": "Chennai, India",
     "startDate": "Apr 2024",
     "endDate": "Sep 2024",
+    "type": "Internship",
     "experiences": [
-      "Revamped the user interface for improved user experience and responsiveness.",
-      "Formulated and implemented seamless frontend and backend interactions."
+      "Accelerated page load latency by 35% by migrating 15+ React client pages to Next.js server-side rendering (SSR).",
+      "Architected role-based access control (RBAC) and enterprise authentication supporting 500+ active enterprise users with OAuth 2.0 and JWT.",
+      "Integrated and optimized 20+ RESTful APIs with structured request validation and resilient client-side state management."
     ],
+    "skills": ["Next.js", "React.js", "TypeScript", "Node.js", "OAuth 2.0", "REST APIs"],
     "imageSrc": "history/SmartItFrame.png"
   },
   {
-    "role": "Amazon ML Summer School Participant",
+    "role": "Amazon ML Summer School Scholar",
     "organisation": "Amazon",
-    "startDate": "June 2024",
-    "endDate": "August 2024",
+    "location": "Virtual / India",
+    "startDate": "Jun 2024",
+    "endDate": "Jul 2024",
+    "type": "Selective Program",
     "experiences": [
-      "Gained in-depth knowledge of Machine Learning models and their practical applications.",
-      "Explored advanced topics such as Generative Models and their use cases in AI."
+      "Selected through competitive nationwide technical evaluation for intensive machine learning mentorship by Amazon scientists.",
+      "Trained in foundational and advanced applied ML: deep neural architectures, supervised/unsupervised learning, dimensionality reduction, and LLM fine-tuning."
     ],
+    "skills": ["Machine Learning", "Deep Learning", "Generative AI", "LLMs", "Python"],
     "imageSrc": "history/AmazonLogo.png"
-  },
-  {
-    "role": "Artificial Intelligence Intern",
-    "organisation": "IBM",
-    "startDate": "April 2023",
-    "endDate": "June 2023",
-    "experiences": [
-      "Worked extensively with the TensorFlow library to develop AI solutions.",
-      "Built a strong foundation in Artificial Intelligence and Machine Learning concepts."
-    ],
-    "imageSrc": "history/IBM.png"
   }
 ]

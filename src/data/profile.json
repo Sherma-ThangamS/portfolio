@@ -1,27 +1,56 @@
 [
-    {
-        "link":"https://leetcard.jacoblin.cool/Sherma_Thangam_S?theme=dark&font=Mina&ext=contest",
-        "info":"Leetcode Coding Profile",
-        "profile_url":"https://leetcode.com/u/SHERMA_THANGAM_S/"
-    },
-    {
-        "link":"https://codeforces-readme-stats.vercel.app/api/card?username=Sherma_Thangam_S&theme=github_dark&disable_animations=false&show_icons=true&force_username=true",
-        "info":"CodeForces Coding Profile",
-        "profile_url":"https://codeforces.com/profile/Sherma_Thangam_S"
-    },
-    {
-        "link":"https://cdn.codechef.com/images/cc-logo.svg",
-        "info":"CodeChef Profile \n \n 3 star rating",
-        "profile_url":"https://www.codechef.com/users/sherma_thangam"
-    },
-    {
-        "link":"https://imgs.search.brave.com/wWDaGEl4BSA1wapnJGA2kKrP6z_bWYhjqdNkwDg5Ymw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZTQub3dsZXIuY29t/L2xvZ28vc2tpbGxy/YWNrX293bGVyXzIw/MTYwMzAyXzEyMDE0/MF9sYXJnZS5qcGc",
-        "info":"SkillRack 2000+ problem solved",
-        "profile_url":"https://www.skillrack.com/faces/resume.xhtml?id=404936&key=ea67b0bd88fcf6de6c4fd1ec68d48af8f953ae4f"
-    },
-    {
-        "link":"https://media.geeksforgeeks.org/gfg-gg-logo.svg",
-        "profile_url":"https://www.geeksforgeeks.org/user/sher22ehs8/",
-        "info":"GFG 4 star rating"
-    }
+  {
+    "platform": "LeetCode",
+    "badge": "Knight • Top 2% Globally",
+    "info": "Contest Rating 2000+, solved 900+ algorithmic problems across Data Structures, Dynamic Programming, and Concurrency.",
+    "profile_url": "https://leetcode.com/u/SHERMA_THANGAM_S/",
+    "stats": "2000+ Rating (Top 2%)",
+    "accent": "#FFA116",
+    "icon": "leetcode"
+  },
+  {
+    "platform": "Oracle Certified",
+    "badge": "Java SE 11 Developer",
+    "info": "Professional certification validating deep JVM architecture, thread safety, concurrency utilities, and core Java language specifications.",
+    "profile_url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=D326CC865FFD6DA90A4DE7211DD00B8C2754625A09CF5DD4BF8B5EED2BA0C8DB",
+    "stats": "Certified Professional",
+    "accent": "#F80000",
+    "icon": "research"
+  },
+  {
+    "platform": "Codeforces",
+    "badge": "Specialist",
+    "info": "Active competitive programming participant solving high-complexity combinatorial and algorithmic problems under tight time limits.",
+    "profile_url": "https://codeforces.com/profile/Sherma_Thangam_S",
+    "stats": "1450+ Rating",
+    "accent": "#1F8ACB",
+    "icon": "codeforces"
+  },
+  {
+    "platform": "CodeChef",
+    "badge": "3-Star Rating",
+    "info": "Competitive programmer with a 3-star rating on CodeChef, participating in global algorithmic contests.",
+    "profile_url": "https://www.codechef.com/users/sherma_thangam",
+    "stats": "1700+ (3★)",
+    "accent": "#5B4638",
+    "icon": "codechef"
+  },
+  {
+    "platform": "GeeksforGeeks",
+    "badge": "4-Star Rating",
+    "info": "Earned 1800+ rating through structured practice in data structures, algorithms, and contest problem solving.",
+    "profile_url": "https://www.geeksforgeeks.org/user/sher22ehs8/",
+    "stats": "1800+ (4★)",
+    "accent": "#2F8D46",
+    "icon": "gfg"
+  },
+  {
+    "platform": "Research Publication",
+    "badge": "Published Author",
+    "info": "Co-authored 'AI Hologram Video Generator' research on 2D to 3D video synthesis, indexed in Semantic Scholar and ResearchGate.",
+    "profile_url": "https://www.semanticscholar.org/paper/AI-Hologram-Video-Generator-Shermathangam/c4b8b64e8c156f08e4bb30efd9b3fe0b5e40e8a7",
+    "stats": "Published Nov 2023",
+    "accent": "#8B5CF6",
+    "icon": "research"
+  }
 ]
